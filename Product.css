@@ -1,46 +1,66 @@
+@import url('https://fonts.googleapis.com/css2family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
 body
-	{background-color: ##ffffff;}
+	{background-color: #FFFFFF;}
 table, th, td
 	{border: 1px soild black;
 	border-collapse: collapse;}
-#nav
-	{list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #6A4E25;}
-div
-	{background-color: #F7F7F7;}
-h1
-	{color: #8c6731;
-	font-family: toma sans;
-	font-size: 300%;
-	line-height: 0.5;
-	text-align: center;}
-
-h2
-	{color: #303030;
-	font-family: toma sans;
-	font-size: 100%;
-	line-height: 0.1;
-	text-align: center;}
-p
-	{color: #303030;
-	font-family: toma sans;
-	font-size: 100%;
-	line-height: 0.8;}
-li a
-	{float: left;}
-li a
-	{display: block;
-	color: white;
-	text-align: center;
-	padding: 16px;
-	text-decoration: none;}
+nav
+	{width: 100%;
+	padding: 2rem 5rem 2rem 5rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;}
 ul
-	{font-family: toma sans;}
+	{list-style: none;
+	display: flex;
+	gap: 3rem;}
+li a
+	{color: #000000;
+	font-size: 18px;
+	font-weight: 600;
+	text-decoration: none;
+	border-radius: 25px;
+	padding: 10px 15px;
+	trasition: 0.6s;}
 li a:hover
-	{background-color: #433219;}
+	{background-color: #F8F8F8;}
+.active
+	{background-color: var(--text-color--);}
+button
+	{border: 2px soild var(back-up-color--);
+	background: transparent;
+	border-radius: 5px;
+	padding: 10px 15px;
+	font-size: 18px;
+	font-weight: 600;
+	color: var(--back-up-color--);
+	cursor: pointer;
+	transition: 0.6s;}
+button:hover
+	background-color: var(--back-up-color--);
+	color: #000000;}
+/* hero content */
+
+.home-content
+	{padding: 2rem 5rem 2rem 5rem;
+	display: flex;
+	align-items: center;
+	height: 70vh;}
+
+.home-container
+	{align-items: center;
+	width: 600px;}
+
+.home-container h1
+	{color: #000000;
+	font-size: 5rem;
+	padding-bottom: 30px;}
+
+.home-container p
+	{color: #000000;
+	font-size: 5rem;
+	padding-bottom: 20px;}
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
