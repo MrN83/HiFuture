@@ -46,3 +46,8 @@
 	font-family: Toma sans;
 	font-weight: 200px;
 	line-height: 25px;}
+*
+    {margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+body

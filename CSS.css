@@ -1,15 +1,86 @@
 @import url('https://fonts.googleapis.com/css2family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
 body
 	{background-color: #FFFFFF;}
-table, th, td
-	{border: 1px soild black;
-	border-collapse: collapse;}
-nav
-	{width: 100%;
-	padding: 2rem 5rem 2rem 5rem;
+.navbar
+	{width: 85%;
+	margin: auto;
+	padding: 35px 0;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;}
+.logo
+	{width: 20%;
+	cursor:pointer;}
+.navbar ul li
+	{list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;}
+.navbar ul li a
+	{text-decoration: none;
+	color: #000;
+	text-transform: uppercase;}
+.navbar ul li::after
+	{content: '';
+	height: 3px;
+	width: 0;
+	background: #8FBC8F;
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+	transition: 0.5s;}
+.navbar ul li:hover::after
+	{width: 100%;}
+.content
+	{width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: #fff;}
+.content h1
+	{font-size: 70px;
+	font-family: Toma sans;
+	margin-top: 80px;}
+.content p
+	{margin: 20px auto;
+	font-family: Toma sans;
+	font-weight: 200px;
+	line-height: 25px;}
+
+.home-sci a
+	{position: relative;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	background: transparent;
+	border: 2px soild #00abf0;
+	border-radius: 50%;
+	font-size: 20px;
+	color: #00abf0;
+	text-decoration: none;
+	z-index: 1;
+	overflow: hidden;
+	transition: .5s;}
+
+.home-sci a:hover
+	{color: #081b29;}
+
+.home-sci a::before
+	{content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background: #00abf0;
+	z-index: -1;
+	transition: .5s;}
+
+.home-sci a:hover::before
+	{width: 100%;}
 ul
 	{list-style: none;
 	display: flex;
@@ -22,8 +93,6 @@ li a
 	border-radius: 25px;
 	padding: 10px 15px;
 	trasition: 0.6s;}
-li a:hover
-	{background-color: #F8F8F8;}
 .active
 	{background-color: var(--text-color--);}
 button
